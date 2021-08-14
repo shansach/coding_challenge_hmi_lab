@@ -9,20 +9,8 @@ from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 
 
-emotion_labels = {
-  '01':'neutral',
-  '02':'calm',
-  '03':'happy',
-  '04':'sad',
-  '05':'angry',
-  '06':'fearful',
-  '07':'disgust',
-  '08':'surprised'
-}
 
-
-
-def loading_audio_data():
+def ext_features():
 
     output_mel = []
     output_mfcc = []
@@ -72,4 +60,4 @@ def loading_audio_data():
 
 
 if __name__ == "__main__":
-    loading_audio_data()
+    ext_features()
